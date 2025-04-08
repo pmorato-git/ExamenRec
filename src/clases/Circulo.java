@@ -1,5 +1,8 @@
 package clases;
-
+/**
+ * @author Pabloytrjtryjrj
+ * @version 1.erge0
+ */
 public class Circulo {
 	// Atributos
 	private int id;
@@ -60,7 +63,17 @@ public class Circulo {
 		return "Circulo [id=" + id + ", nombre=" + nombre + ", radio=" + radio + ", color=" + color + "]";
 	}
 	
-	
+	/**
+	 * Metodo para calcular area de circulos
+	 * @param circulo1 tiene que ser un circulo
+	 * @return
+	 */
+	public static double calcularAreaCirculo(Circulo circulo1) {
+		// Calcular area circulo pi * r * r
+		double radio = circulo1.getRadio();
+		double areaCirculo = 3.14159265 * radio * radio;
+		return areaCirculo;
+	}
 	
 	
 	

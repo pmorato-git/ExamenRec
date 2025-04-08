@@ -1,5 +1,8 @@
 package clases;
-
+/**
+ * @author Pablo vavregewrg
+ * @version 2.0
+ */
 public class Rectangulo {
 	private int id;
 	private String nombre;
@@ -66,5 +69,16 @@ public class Rectangulo {
 				+ color + "]";
 	}
 	
-	
+	/**
+	 * Metodo que sirve para calcular areas de rectangulos
+	 * @param rectangulito1 hay que pasar un rectangulo con sus medidads
+	 * @return el area de mis rectangulitos
+	 */
+	public static double calcularAreaRectangulo(Rectangulo rectangulito1) {
+		// Area rectangulo l * l
+		double ladoA = rectangulito1.getLadoA();
+		double ladoB = rectangulito1.getLadoB();
+		double areaRectangulo = ladoA*ladoB;
+		return areaRectangulo;
+	}
 }
